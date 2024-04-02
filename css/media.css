@@ -1,0 +1,98 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .nav__burger {
+        display: block;
+        order: 1;
+    }
+
+    .list {
+        position: absolute;
+        right: 20px;
+        top: 100%;
+        background: #fff;
+        flex-direction: column;
+        min-width: 200px;
+        gap: 0;
+        align-items: stretch;
+        visibility: hidden;
+    }
+
+    .list > li {
+        padding: 12px 30px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .nav__burger:focus ~ .list {
+        visibility: visible;
+    }
+
+    .header__content {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footer__title {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .ecom__content, .custom__content, .footer__content {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 40px;
+    }
+
+    .custom__title {
+        margin-top: 20px;
+    }
+
+    .footer__title {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .ecom__card, .custom__card, .footer__card {
+        max-width: 235px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .nav__container {
+        flex-wrap: wrap;
+    }
+
+    .header__title, .info__title {
+        font-size: 35px;
+    }
+
+    .ecom__card, .custom__card, .footer__card {
+        max-width: 255px;
+    }
+
+    .project {
+        text-align: center;
+    }
+
+    .search__input {
+        max-width: 160px;
+    }
+}
