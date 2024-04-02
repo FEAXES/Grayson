@@ -493,3 +493,29 @@ li:last-of-type .dropdown__link::after {
     align-items: center;
     font-size: 30px;
 }
+
+.window {
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    display: none;
+}
+
+.window:target {
+    display: flex;
+}
+
+.window__forms {
+    max-width: 400px;
+    max-height: 400px;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+}
